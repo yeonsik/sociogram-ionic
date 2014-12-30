@@ -23,7 +23,7 @@ angular.module('sociogram.controllers', [])
 
         $scope.facebookLogin = function () {
 
-            OpenFB.login('email,read_stream,publish_stream,user_friends,read_friendlists').then(
+            OpenFB.login('email,read_stream,publish_stream,user_friends,read_friendlists,publish_actions').then(
                 function () {
                     $location.path('/app/person/me/feed');
                 },
