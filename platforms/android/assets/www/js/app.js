@@ -2,7 +2,10 @@ angular.module('sociogram', ['ionic', 'openfb', 'sociogram.controllers'])
 
     .run(function ($rootScope, $state, $ionicPlatform, $window, OpenFB) {
 
-        OpenFB.init('1548930792032217',
+        OpenFB.init('1766688126889696',
+            /* https://developers.facebook.com/apps advanced settings 
+               의 Valid OAuth redirect URI 에 아래 주소를 작성해야 한다.
+            */
             'https://www.facebook.com/connect/login_success.html',
             // 'http://localhost/openfb/index.html',
             $window.sessionStorage);
